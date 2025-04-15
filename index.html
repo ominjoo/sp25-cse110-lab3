@@ -14,9 +14,9 @@
         <h1>CSE110 Team 16 Meeting Minutes</h1>
         <nav>
             <ul>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="about.html">Pictures and Diagrams</a></li>
-            <li><a href="contact.html">Recordings</a></li>
+            <li><a href="#introduction">Agenda</a></li>
+            <li><a href="#content">Meeting Notes</a></li>
+            <li><a href="#media">Pictures and Recordings</a></li>
             </ul>
         </nav>
         <hr>
@@ -25,24 +25,130 @@
     <main>
         <h2> Topic: <em>Group formation and first meeting</em></h2>
         <p>Date: <strong>April 13, 2025</strong></p>
-        <section id = "attendence">
-            <h3>Attendees:</h3>
+        <section id = "introduction">
+            <div id="attendance">
+                <h3>Attendees:</h3>
+                <ul>
+                    <li>John Doe</li>
+                    <li>Jane Smith</li>
+                    <li>Bob Johnson</li>
+                    <li>Alice Brown</li>
+                </ul>
+            </div>
+            <div id = "agenda">
+                <h2>Agenda:</h2>
+                <ol>
+                    <li>Ice Breakers</li>
+                    <li>Goals and values</li>
+                    <li>Role assignments</li>
+                </ol>
+
+                <p><b>Unfinished Business</b> <br> (Address at beginning of meeting)<p>
+                <ul>
+                    <li>Collect everyone's <i>LinkedIn</i></li>
+                    <li>Agree on a group name</li>
+                </ul>
+
+                <p><b>New Business</b></p>
+                <ul>
+                    <li>Schedule next meeting</li>
+                    <li>Discuss project ideas</li>
+                </ul>    
+            
+            </div>
+        </section>
+
+        <section id = "content">
+            <h2>Meeting Notes:</h2>
+            <p>The meeting started with <span> ice breakers </span> where each member introduced themselves and shared their favorite programming language.</p>
+            <p>We discussed our goals for the project and agreed on the following values: collaboration, communication, and respect.</p>
+            <p>Roles were assigned as follows:</p>
             <ul>
-                <li>John Doe</li>
-                <li>Jane Smith</li>
-                <li>Bob Johnson</li>
-                <li>Alice Brown</li>
+                <li>John Doe - Project Manager</li>
+                <li>Jane Smith - Lead Developer</li>
+                <li>Bob Johnson - Designer</li>
+                <li>Alice Brown - Tester</li>
             </ul>
+
         </section>
-        <section id = "agenda">
-            <h3>Agenda:</h3>
-            <ol>
-                <li>Ice Breakers</li>
-                <li>Goals and values</li>
-                <li>Role assignments</li>
-            </ol>
-    
+
+        <section id = "media">
+            <h2>Pictures and Recordings:</h2>
+            <div id = "pictures">
+                <h3>Pictures:</h3>
+                <img src="81125.jpg" alt="Software engineering sample diagram" width="300">
+                <img src="26948.jpg" alt="Software engineering sample diagram" width="300">
+                <p>Attribution: designed by rawpixek.com on Freepik</p>
+            </div>
+            <div id = "recordings">
+                <h3>Recordings:</h3>
+               
+                <audio controls>
+                    <source src="Sweet 16.mov"></source>
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+
+                <video controls>
+                    <source src="Sweet 16.mov" type="video/mp4">
+                </video>
+
+                <details>
+                    <summary>Why are we holding up ballons with 1s and 0s on them?</summary>
+                    <p>We are Sweet 00010000</p>
+                </details>
+            </div>
         </section>
+
+        <section id="form">
+            <h2>Feedback Form:</h2>
+            <form>
+                <fieldset>                
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="date">Date</label><br>
+                    <input type="date" id="date" name="date"><br>
+
+                    <label for="anonymous"><br>
+                        <input type="checkbox" id="anonymous" name="anonymous">
+                        Submit anonymously?<br>
+                    </label><br><br>
+
+                    <p>Would you recommend us to others?</p>
+                    <label>
+                        <input type="radio" name="recommend" value="yes"> Yes
+                    </label><br>
+                    <label>
+                        <input type="radio" name="recommend" value="no"> No
+                    </label><br><br>
+
+                    <label for="rating">How would you rate us?</label><br>
+                    <select id="rating" name="rating">
+                        <option value="">-- Choose --</option>
+                        <option value="1">Poor</option>
+                        <option value="2">Okay</option>
+                        <option value="3">Great</option>
+                    </select><br><br>
+
+                    <label for="language">Favorite programming language:</label><br>
+                    <input list="languages" id="language" name="language">
+                    <datalist id="languages">
+                        <option value="Python">
+                        <option value="JavaScript">
+                        <option value="Java">
+                        <option value="C++">
+                    </datalist><br><br>
+
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback"></textarea><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+        </section>
+
+
     </main>
     
 
