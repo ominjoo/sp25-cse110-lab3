@@ -1,0 +1,31 @@
+:root {
+    --main-color: hotpink;
+    --secondary-color: hsl(206, 68%, 56%);
+    --accent-color: rgb(120, 100, 200);
+    --background-color: #febfe4;
+    --text-color: color-mix(in srgb, red 40%, blue 60%);
+}
+
+body {
+    color: var(--text-color, #333);
+    background-color: var(--background-color, pink);
+}
+
+nav {
+    color: color(display-p3 3 5.5 6);
+    background-color: color(display-p3 0.2 0.6 1 / 0.3);
+}
+
+h2 {
+    color: var(--main-color, #333);
+}
+
+h3 {
+    color: var(--secondary-color, #333);
+    
+}
+
+form {
+    background-color: color(display-p3 0.2 0.6 1 / 0.3);
+}
+
