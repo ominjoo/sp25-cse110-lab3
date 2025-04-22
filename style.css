@@ -1,8 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --main-color: hotpink;
     --secondary-color: hsl(206, 68%, 56%);
-    --accent-color: rgb(120, 100, 200);
-    --background-color: #febfe4;
+    --accent-color: rgb(255, 202, 240);
+    --background-color: #ffe1f3;
     --text-color: color-mix(in srgb, red 40%, blue 60%);
 }
 
@@ -11,9 +17,37 @@ body {
     background-color: var(--background-color, pink);
 }
 
+main {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    margin: 2rem 2rem auto;
+    border-radius: 10px;
+    border-width: 4px;
+}
+
 nav {
+    margin-top: 0rem;
+    margin-bottom:5rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding: 2rem 5rem 2rem 5rem;
     color: color(display-p3 3 5.5 6);
     background-color: color(display-p3 0.2 0.6 1 / 0.3);
+}
+
+section {
+    background-color: var(--accent-color, #f0f0f0);
+    border: 2px solid #ccc;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: 2rem 2rem auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 h2 {
@@ -26,6 +60,26 @@ h3 {
 }
 
 form {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 10px;
     background-color: color(display-p3 0.2 0.6 1 / 0.3);
+}
+
+fieldset {
+    border: 2px;
+    border-style: dashed;
+    border-radius: 10px;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: color(display-p3 0.2 0.6 1 / 0.3);
+}
+
+#agenda {
+    background-color: color(display-p3 0.2 0.6 1 / 0.3);
+    border: 2px solid #ccc;
+    padding: 1rem;
+    margin:  auto;
+    border-radius: 10px;
 }
 
