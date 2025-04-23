@@ -1,9 +1,11 @@
+/* CSS Reset to remove default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Color variables for easy theme customization */
 :root {
     --main-color: hotpink;
     --secondary-color: hsl(206, 68%, 56%);
@@ -34,9 +36,9 @@ nav {
     padding: 2rem 5rem 2rem 5rem;
     color: color-mix(normal, red 30%, blue 70%);
     background-color: color(display-p3 0.529 0.533 0.922 / 0.8);
-    position: sticky;
-    top: 0;
-    text-align: right;
+    position: sticky; /* Makes the nav sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    text-align: right; 
     max-width: 100%;
 }
 
@@ -69,7 +71,7 @@ h3 {
 }
 
 #invisible-text {
-    display: none;
+    display: none;  /* hides content completely */
 }
 
 .names {
@@ -78,10 +80,11 @@ h3 {
     color: var(--main-color, #333);
 }
 
+/* Flex container for meeting pictures */
 #pictures {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center; /* Center the pictures */
+    flex-wrap: wrap; /* Allow wrapping to next line */
     gap: 1rem;
     margin: 2rem 2rem auto;
 }
@@ -96,7 +99,7 @@ form {
     text-align: center;
     max-width: 100%;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in width */
     border: 2px;
     border-style: dashed;
     border-radius: 10px;
@@ -127,4 +130,27 @@ footer {
     text-align: right;
     margin: 1rem 2rem 2rem 2rem;
     position: relative;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    nav {
+        padding: 1rem; /* Adjust padding for smaller screens */
+        margin: 0;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    form {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    footer {
+        text-align: center;
+        margin: 1rem auto;
+    }
 }
