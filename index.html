@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav style="background-color: rgb(147, 201, 255)">
+    <nav>
         <a href="#introduction">Agenda</a>
         <a href="#content">Meeting Notes</a>
         <a href="#media">Pictures and Recordings</a>
@@ -20,20 +20,18 @@
         <h1 style="color:hotpink">CSE110 Team 16 Meeting Minutes</h1>
         <hr>
     </header>
-
+    <p id="invisible-text";>You can't see me</p>
     <main>
         <h2> Topic: <em>Group formation and first meeting</em></h2>
-        <p>Date: <strong>April 13, 2025</strong></p>
+        <p style="text-align: center">Date: <strong>April 13, 2025</strong></p>
         <section id = "introduction">
             <div id="attendance">
                 <h2>Introduction</h2>
                 <h3>Attendees:</h3>
-                <ul>
-                    <li class = "names">John Doe</li>
-                    <li class = "names">Jane Smith</li>
-                    <li class = "names">Bob Johnson</li>
-                    <li class = "names">Alice Brown</li>
-                </ul>
+                    <p class = "names">John Doe</p>
+                    <p class = "names">Jane Smith</p>
+                    <p class = "names">Bob Johnson</p>
+                    <p class = "names">Alice Brown</p>
             </div>
             <div id = "agenda">
                 <h3>Agenda:</h3>
@@ -78,10 +76,11 @@
             <div id = "pictures">
                 <img src="81125.jpg" alt="Software engineering sample diagram" width="300">
                 <img src="26948.jpg" alt="Software engineering sample diagram" width="300">
+                <img src="computer-program-coding-screen.jpg" alt="screen of a computing with programming" width="300">
             </div>
-            <p style="text-align: center">Attribution: designed by rawpixek.com on Freepik</p>
+            <p style="text-align: center; padding-top: 1rem;">Attribution: designed by rawpixel.com on Freepik</p>
             <div id = "recordings">
-                <h3>Recordings:</h3>
+                <h3 style="padding-top:2rem;">Recordings:</h3>
                
                 <audio controls>
                     <source src="Sweet_16.mov">
@@ -101,18 +100,12 @@
 
         <section id="form">
             <h2>Feedback Form:</h2>
-            <form>
-                <fieldset>                
+            <form>               
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name"><br>
 
                     <label for="date">Date</label><br>
                     <input type="date" id="date" name="date"><br>
-
-                    <label for="anonymous"><br>
-                        <input type="checkbox" id="anonymous" name="anonymous">
-                        Submit anonymously?<br>
-                    </label><br><br>
 
                     <p>Would you recommend us to others?</p>
                     <label style="color:white">
@@ -141,9 +134,11 @@
 
                     <label for="feedback">Feedback:</label><br>
                     <textarea id="feedback" name="feedback"></textarea><br>
-
+                    <label for="anonymous"><br>
+                        <input type="checkbox" id="anonymous" name="anonymous">
+                        Submit anonymously?<br>
+                    </label><br><br>
                     <button type="submit">Submit</button>
-                </fieldset>
             </form>
         </section>
     </main>
